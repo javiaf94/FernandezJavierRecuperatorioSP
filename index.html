@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./Persona.js"></script>
+    <script type="text/javascript" src="./Cliente.js"></script>        
+    <script type="text/javascript" src="./main.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="divHeader">
+        <h1 id="header">ABM Personas</h1>
+    </div>
+
+    <div id="divContDatos" class="contenedorDatos">
+
+        <div>
+            <label for="txtid">ID</label>
+        </div>
+        <div id="divid">
+            <input type="text" id="txtid" disabled>
+        </div>
+
+        <div id="labelNombre">
+            <label for="txtNombre">Nombre</label>
+        </div>
+        <div id="divNombre">
+            <input type="text" id="txtNombre">
+        </div>
+
+        <div id="labelApellido">
+            <label for="txtApellido">Apellido</label>
+        </div>
+        <div id="divApellido">
+            <input type="text" id="txtApellido">
+        </div>
+
+        <div>
+            <label for="numEdad">Edad</label>
+        </div>
+        <div id="divEdad">
+            <input type="number" id="numEdad">
+        </div>
+
+        <div>
+            <label for="selectSexo">Sexo</label>
+        </div>
+        <div id="divSexo">
+            
+            <select name="Sexo" id="selectSexo" >
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+              </select>
+        </div>
+
+
+        <div id="divBotones">
+
+
+            <div>
+                <input type="button" value="Guardar" id="btnGuardar">
+                <input type="button" value="Eliminar" id="btnEliminar">
+                <input type="button" value="Limpiar lista" id="btnLimpiar">
+
+            </div>
+
+        </div>
+        
+    </div>
+
+    <div id="divFiltros">
+        <div>
+            <label>Filtrar por:</label>
+            <select name="filtro" id= "selectFiltro">
+                <option value="Todos">Todos</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+            </select>
+        </div>
+        <div>
+            <label>Promedio de edades:</label>
+            <input type="number" id="numPromedio" disabled >            
+        </div>
+        <div>
+            <input type="button" id="btnPromedio" value="Calcular Promedio"> 
+        </div>     
+    </div>
+
+    <div id="divColumnas">
+        <label>Mostrar columnas:</label>
+        <label for="cboxID">ID</label>
+        <input type ="checkbox"  id="cboxID" checked>
+        <label for="cboxNombre">Nombre</label>
+        <input type ="checkbox"  id="cboxNombre" checked>
+        <label for="cboxApellido">Apellido</label>
+        <input type ="checkbox"  id="cboxApellido"checked>
+        <label for="cboxEdad">Edad</label>
+        <input type ="checkbox"  id="cboxEdad"checked>
+
+    </div>
+    
+    <table id="tabla">
+        <thead>
+            <tr>
+                <th id="thID">Id</th>
+                <th id="thNombre">Nombre</th>
+                <th id="thApellido">Apellido</th>
+                <th id="thEdad">Edad</th>
+                <th id="thSexo">Sexo</th>
+                <th id="thSeleccion">Seleccion</th>
+            </tr>
+        </thead>
+        <tbody id="tCuerpo">
+
+        </tbody>
+    </table>
+</body>
+</html>
